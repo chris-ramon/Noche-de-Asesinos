@@ -1,0 +1,10 @@
+Quick php application
+
+About the case
+
+There is a party with many people, and 1 guy the "killer" poisons a cup of glass
+so the guest's drinks the wine, so 1 guest should die after some hours.
+
+Running
+
+To get it going open index.php with any kind of webserver like (apache)
