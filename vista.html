@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caso Noche de Asesinos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css.css" type="text/css" media="all"/>
+    </head>
+    <body>
+        <h1>Caso Noche de Asesinos</h1>
+        <div id="content">            
+            <?php
+            foreach($invitados as $value){
+                echo "<span>".$value->getNombre()."</span>"." : ";
+                if($value->getNombre() == "Killer!"){
+                    echo "Jajaja!, tomando redbull! "."<br/>";
+                }
+                else
+                {
+                    echo $value->beberVaso($vaso->getNumVasos(), $vasoenvenenado)."<br/>";
+                    $vaso->reducirNumero();
+                }
+            }
+            echo "<br/><span>"."El vaso envenenado fue el nº: "."</span>".$vasoenvenenado;
+            ?>
+        </div>
+    </body>
+</html>
